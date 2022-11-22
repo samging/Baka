@@ -1,0 +1,22 @@
+ [
+    { 
+            "id": 1,
+            "firstn": "Samuel",
+            "lastn": "Fux",
+            "classn": "PR2 - žák",
+            "button1": "komens",
+            "button2": "absence",
+            "button3": "events plan",
+            "button4":"marks",
+            "button5":"semester",
+            "button6":"timetable",
+            "button7":"substitution",
+            "button8":"subjects",
+            "button9":"teaching",
+            "button10":"homework",
+            "button11":"infochannel",
+            "button12":"dokumenty",
+            "button13":"výukové..."
+    
+        }    
+]
