@@ -1,7 +1,5 @@
 import React from "react";
 import '../App.css';
-import Komens from "./komens";
-import Absence from "./absence";
 import Dokumenty from "./dokumenty";
 import Event from "./event";
 import Homework from "./homework";
@@ -16,6 +14,15 @@ import Vyuka from "./vyuka";
 import Komen from "./Komen";
 import Newkomen from "./newkomen";
 import Notfound from "./Notfound";
+import Draft from "./komens-routing/Draft";
+import Noticeboard from "./komens-routing/Noticeboard";
+import Recieved from "./komens-routing/Recieved";
+import Sent from "./komens-routing/Sent";
+import Absence from "./Absence.jsx";
+import Missed from "./absence-routing/Missed";
+import Daily from "./absence-routing/Daily";
+import Monthly from "./absence-routing/Monthly";
+//import Absencenavv from "./absence-routing/absencenavv";
 
 //  BrowserRouter as Router,
 
@@ -24,6 +31,7 @@ import {
 	Route,
     Link
 } from 'react-router-dom';
+
 
 
 const Based = (props) => {
@@ -46,22 +54,29 @@ const Based = (props) => {
                     <Route path="/" />
                     <Route path="*" element={<Notfound/>}/>
 
-
-
-
-
                     
                     <Route path="komens">
-                        <Route index element={<Komens/>}/>
-                        <Route path=":id" element={<Komen/>}/>
+                        <Route index element={<Komen/>}/>
+                        <Route path="recieved" element={<Recieved/>}/>
+                        <Route path="sent" element={<Sent/>}/>
+                        <Route path="noticeboard" element={<Noticeboard/>}/>
+                        <Route path="draft" element={<Draft/>}/>
                         <Route path="new" element={<Newkomen/>}/>
                     </Route>
 
+                    
+                    
+                   
+                 
+                    <Route path="absence" >
+                    <Route index element={<Absence/>}/>
+                    <Route path="missed" element={<Missed/>}/>
 
+                    <Route path="daily" element={<Daily/>}/>
+                        <Route path="monthly" element={<Monthly/>}/>
+                    </Route>
+                   
 
-
-
-                    <Route path="absence" element={< Absence />} />
                     <Route path="dokumenty" element={< Dokumenty />} />
                     <Route path="event" element={< Event />} />
                     <Route path="homework" element={< Homework />} />
@@ -76,7 +91,10 @@ const Based = (props) => {
                     </Routes>
                     
                     <nav>
+                    
                     <ul>
+                    
+                    
                     <li>
                     <Link to="/">home</Link>
                     </li>

@@ -8,11 +8,16 @@ export const Komen = () => {
     return( 
     <wrapper>
     <div>Komen {id}</div>
-    <Link to="/komens/1">komen 1</Link>
-    <Link to="/komens/2">Komen 2</Link>
-    <Link to="/komens/3">komen 3</Link>
-    <Link to="/komens/4">komen 4</Link>
+    <Link to="/komens/recieved">recieved</Link>
+    <br/>
+    <Link to="/komens/sent">sent</Link>
+    <br/>
+    <Link to="/komens/noticeboard">noticeboard</Link>
+    <br/>
+    <Link to="/komens/draft">draft</Link>
+    <br/>
     <Link to="/komens/new">new komens</Link>
+    <br/>
     </wrapper>
     
     
