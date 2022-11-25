@@ -10,7 +10,7 @@ let deactiveClassName = {
 };
 
 const navdaily = [
-  { key: "1", to:"/absence", label:"Missed"},
+  { key: "1", to:"/absence/missed", label:"Missed"},
   { key: "2", to:"/absence/daily", label:"Daily"},
   { key: "3", to:"/absence/monthly", label:"Monthly"},
   { key: "4", to:"/", label:"<<<"}

@@ -18,10 +18,10 @@ import Draft from "./komens-routing/Draft";
 import Noticeboard from "./komens-routing/Noticeboard";
 import Recieved from "./komens-routing/Recieved";
 import Sent from "./komens-routing/Sent";
-import Absence from "./Absence.jsx";
 import Missed from "./absence-routing/Missed";
 import Daily from "./absence-routing/Daily";
 import Monthly from "./absence-routing/Monthly";
+
 //import Absencenavv from "./absence-routing/absencenavv";
 
 //  BrowserRouter as Router,
@@ -32,7 +32,28 @@ import {
     Link
 } from 'react-router-dom';
 
+export function Sec(props) {
+props.data.map (consoled => (
+    return
+    
+    <wrapper>    
+    <ul>
+    <li>
+    <Link to="absence/missed">{consoled.button2}</Link>
+    </li>
+    </ul>
+    
+   <Routes>
+   <Route path="absence/missed" element={<Missed/>}/>
+   <Route path="absence/daily" element={<Daily/>}/>
+   <Route path="absence/monthly" element={<Monthly/>}/>
+   
+   </Routes>
+   </wrapper>
+   
+   ))
 
+}
 
 const Based = (props) => {
     return(
@@ -41,15 +62,8 @@ const Based = (props) => {
          
          props.data.map (content =>(
             <div>
-                    
-                
                 <span><strong> {content.lastn} {content.firstn}, {content.classn} </strong></span>
-               <div>
-          
-        
-
-
-   
+                    <div>
                     <Routes>
                     <Route path="/" />
                     <Route path="*" element={<Notfound/>}/>
@@ -68,11 +82,7 @@ const Based = (props) => {
                     
                    
                  
-                    <Route path="absence" >
-                    <Route index element={<Missed/>}/>
-                        <Route path="daily" element={<Daily/>}/>
-                        <Route path="monthly" element={<Monthly/>}/>
-                    </Route>
+                   
                    
 
                     <Route path="dokumenty" element={< Dokumenty />} />
@@ -92,7 +102,10 @@ const Based = (props) => {
                     
                     <ul>
                     
-                    
+                    <li>
+                        
+                    </li>
+
                     <li>
                     <Link to="/">home</Link>
                     </li>
@@ -100,10 +113,7 @@ const Based = (props) => {
                     <Link to="komens">{content.button1}</Link>
 
                     </li>
-                    <li>
-                    <Link to="absence">{content.button2}</Link>
-
-                    </li>
+                 
                     <li>
                     <Link to="event">{content.button3}</Link>
 
@@ -144,9 +154,12 @@ const Based = (props) => {
                     <li><Link to="dokumenty">{content.button12}</Link></li>
                     <li><Link to="vyuka">{content.button13}</Link></li>
                     </ul>
+                  
+                            
+                       
                     </nav>
 
-                
+                    
                 </div>
 
             </div>
@@ -159,6 +172,7 @@ const Based = (props) => {
 }
 
 export default Based;
+
 
 
 
