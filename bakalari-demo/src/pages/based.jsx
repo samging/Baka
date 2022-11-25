@@ -69,10 +69,8 @@ const Based = (props) => {
                    
                  
                     <Route path="absence" >
-                    <Route index element={<Absence/>}/>
-                    <Route path="missed" element={<Missed/>}/>
-
-                    <Route path="daily" element={<Daily/>}/>
+                    <Route index element={<Missed/>}/>
+                        <Route path="daily" element={<Daily/>}/>
                         <Route path="monthly" element={<Monthly/>}/>
                     </Route>
                    
