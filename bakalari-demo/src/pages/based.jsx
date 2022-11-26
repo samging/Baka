@@ -32,28 +32,6 @@ import {
     Link
 } from 'react-router-dom';
 
-export function Sec(props) {
-props.data.map (consoled => (
-    return
-    
-    <wrapper>    
-    <ul>
-    <li>
-    <Link to="absence/missed">{consoled.button2}</Link>
-    </li>
-    </ul>
-    
-   <Routes>
-   <Route path="absence/missed" element={<Missed/>}/>
-   <Route path="absence/daily" element={<Daily/>}/>
-   <Route path="absence/monthly" element={<Monthly/>}/>
-   
-   </Routes>
-   </wrapper>
-   
-   ))
-
-}
 
 const Based = (props) => {
     return(
