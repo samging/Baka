@@ -56,11 +56,12 @@ const Based = (props) => {
                         <Route path="new" element={<Newkomen/>}/>
                     </Route>
 
-                    
-                    
-                   
-                 
-                   
+    
+                    <Routes>
+                        <Route path="absence/missed" element={<Missed/>}/>
+                        <Route path="absence/daily" element={<Daily/>}/>
+                        <Route path="absence/monthly" element={<Monthly/>}/> 
+                    </Routes>
                    
 
                     <Route path="dokumenty" element={< Dokumenty />} />
@@ -80,22 +81,31 @@ const Based = (props) => {
                     
                     <ul>
                     
-                    <li>
-                        
-                    </li>
+                    
 
                     <li>
                     <Link to="/">home</Link>
                     </li>
+
+
+
+
                     <li>
                     <Link to="komens">{content.button1}</Link>
-
                     </li>
                  
                     <li>
-                    <Link to="event">{content.button3}</Link>
-
+                    
+                        <Link to="absence/missed">{content.button2}</Link>
+                    
                     </li>
+                    
+                    <li>
+                    <Link to="event">{content.button3}</Link>
+                    </li>
+
+                    
+
                     <li>
                     <Link to="marks">{content.button4}</Link>
 

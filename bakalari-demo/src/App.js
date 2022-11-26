@@ -1,6 +1,6 @@
 import {ReactComponent as  Male } from './male.svg';
 import './App.css';
-import Based, { Sec } from './pages/based';
+import Based from './pages/based';
 import data from './datas/basedata.json'
 import {BrowserRouter} from "react-router-dom"
 import React from 'react';
@@ -12,7 +12,6 @@ function App() {
       <div>
         <Male className='svgm' /> 
         <Based data={data}/>
-        <Sec/>
       </div>
     </BrowserRouter>
     </React.StrictMode>

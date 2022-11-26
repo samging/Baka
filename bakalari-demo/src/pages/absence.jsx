@@ -20,11 +20,7 @@ export const Absence = () => {
             <Route path="absence/daily" element={<Daily/>}/>
             <Route path="absence/monthly" element={<Monthly/>}/>
           </Routes>
-          <ul>
-          <li>
-          <Link to="absence/missed">222</Link>
-          </li>
-          </ul>
+         
           </div>
      
       
@@ -34,3 +30,6 @@ export const Absence = () => {
 }
 
 export default Absence;
+
+
+//    STILL NOT USED
